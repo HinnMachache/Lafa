@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Gallery-Showcase | LAFA</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Teko:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    <link href="lib/twentytwenty/twentytwenty.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border position-relative text-primary" style="width: 6rem; height: 6rem;" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark p-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="row gx-0 d-none d-lg-flex">
+            <div class="col-lg-7 px-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center py-3 me-3">
+                    <a class="text-body px-2" href="tel:+32482085784"><i class="fa fa-phone-alt text-primary me-2"></i>+32 482085784</a>
+                    <a class="text-body px-2" href="mailto:info@la-fa.org"><i class="fa fa-envelope-open text-primary me-2"></i>info@la-fa.org</a>
+                </div>
+            </div>
+            <div class="col-lg-5 px-5 text-end">
+                <div class="h-100 d-inline-flex align-items-center">
+                    <a class="btn btn-sm-square btn-outline-body me-1" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-sm-square btn-outline-body me-1" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-sm-square btn-outline-body me-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-sm-square btn-outline-body me-0" href=""><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+        <a href="https://www.la-fa.org" class="navbar-brand ms-4 ms-lg-0">
+            <img class="me-3" src="images/logo/log.png" alt="Icon">
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                    <a href="https://www.la-fa.org" class="nav-item nav-link">Home</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About</a>
+                    <div class="dropdown-menu border-0 m-0">
+                        <a href="our-history" class="dropdown-item">Who We Are</a>
+                        <a href="vision-values" class="dropdown-item">Vision &amp; Values</a>
+                        <a href="leadership-team" class="dropdown-item">Leadership &amp; Trustees</a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Our Work</a>
+                    <div class="dropdown-menu border-0 m-0">
+                        <a href="food-program" class="dropdown-item">Food Program</a>
+                        <a href="child-sponsorship" class="dropdown-item">Child Sponsorship</a>
+                        <a href="lafa-initiatives" class="dropdown-item">Transformational Initiatives</a>
+                        <a href="gallery-showcase" class="dropdown-item active">Tour the Village</a>
+                    </div>
+                </div>
+                    <a href="ways-to-give" class="nav-item nav-link">Ways To Give</a>
+                    <a href="contact-us" class="nav-item nav-link">Get in Touch</a>
+                <a href="#searchModal" class="nav-item nav-link" data-bs-toggle="modal"><i class="fa fa-search"></i></a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(0, 0, 0, .5);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 600px;">
+                        <input type="text" class="form-control bg-transparent border-light p-3" placeholder="Type search keyword">
+                        <button class="btn btn-light px-4"><i class="fa fa-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Search End -->
+
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header mb-5 p-0 wow fadeIn" data-wow-delay="0.1s" style="background-image: url(images/carousel-2.jpg);">
+        <div class="container-fluid page-header-inner py-5">
+            <div class="container py-5">
+                <h1 class="display-1 text-white animated slideInDown">Our Gallery Showcase</h1>
+                <nav aria-label="breadcrumb animated slideInDown">
+                    <ol class="breadcrumb text-uppercase mb-0">
+                        <li class="breadcrumb-item"><a class="text-white" href="https://www.la-fa.org">Home</a></li>
+                        <li class="breadcrumb-item text-primary active" aria-current="page">Tour The Village</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+
+    <!-- Project Start -->
+    <div class="container-xxl project py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h1 class="display-5 mb-4">Project Gallery Showcase</h1>
+                <hr>
+            </div>
+            <div class="row g-0 project-items">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <a class="project-item" href="">
+                        <div class="position-relative">
+                            <img class="img-fluid-1" src="images/showcase/village-showcase-md-4.jpg" alt="">
+                            <div class="project-text p-4">
+                                <h3 class="mb-0">Project Showcase</h3>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="project-item" href="">
+                        <div class="position-relative">
+                            <img class="img-fluid-1" src="images/showcase/village-showcase-lg006.jpg" alt="">
+                            <div class="project-text p-4">
+                                <h3 class="mb-0">Project Showcase</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <a class="project-item" href="">
+                        <div class="position-relative">
+                            <img class="img-fluid-1" src="images/showcase/village-showcase-lg005.jpg" alt="">
+                            <div class="project-text p-4">
+                                <h3 class="mb-0">Project Showcase</h3>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="project-item" href="">
+                        <div class="position-relative">
+                            <img class="img-fluid-1" src="images/showcase/village-showcase-md-1.jpg" alt="">
+                            <div class="project-text p-4">
+                                <h3 class="mb-0">Project Showcase</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <a class="project-item" href="">
+                        <div class="position-relative">
+                            <img class="img-fluid-1" src="images/showcase/village-showcase-md-006.jpg" alt="">
+                            <div class="project-text p-4">
+                                <h3 class="mb-0">Project Showcase</h3>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="project-item" href="">
+                        <div class="position-relative">
+                            <img class="img-fluid-1" src="images/showcase/village-showcase-lg002.jpg" alt="">
+                            <div class="project-text p-4">
+                                <h3 class="mb-0">Project Showcase</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <a class="project-item" href="">
+                        <div class="position-relative">
+                            <img class="img-fluid-1" src="images/showcase/village-showcase-md-003.jpg" alt="">
+                            <div class="project-text p-4">
+                                <h3 class="mb-0">Project Showcase</h3>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="project-item" href="">
+                        <div class="position-relative">
+                            <img class="img-fluid-1" src="images/showcase/village-showcase-lg001.jpg" alt="">
+                            <div class="project-text p-4">
+                                <h3 class="mb-0">Project Showcase</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.9s">
+                    <a class="project-item" href="">
+                        <div class="position-relative">
+                            <img class="img-fluid-1" src="images/showcase/village-showcase-lg-8.jpg" alt="">
+                            <div class="project-text p-4">
+                                <h3 class="mb-0">Project Showcase</h3>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="project-item" href="">
+                        <div class="position-relative">
+                            <img class="img-fluid-1" src="images/showcase/village-showcase-md-2.jpg" alt="">
+                            <div class="project-text p-4">
+                                <h3 class="mb-0">Project Showcase</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.11s">
+                    <a class="project-item" href="">
+                        <div class="position-relative">
+                            <img class="img-fluid-1" src="images/showcase/village-showcase-md-008.jpg" alt="">
+                            <div class="project-text p-4">
+                                <h3 class="mb-0">Project Showcase</h3>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="project-item" href="">
+                        <div class="position-relative">
+                            <img class="img-fluid-1" src="images/showcase/village-showcase-lg-9.jpg" alt="">
+                            <div class="project-text p-4">
+                                <h3 class="mb-0">Project Showcase</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.13s">
+                    <a class="project-item" href="">
+                        <div class="position-relative">
+                            <img class="img-fluid-1" src="images/showcase/village-showcase-md-002.jpg" alt="">
+                            <div class="project-text p-4">
+                                <h3 class="mb-0">Project Showcase</h3>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="project-item" href="">
+                        <div class="position-relative">
+                            <img class="img-fluid-1" src="images/showcase/village-showcase-lg-7.jpg" alt="">
+                            <div class="project-text p-4">
+                                <h3 class="mb-0">Project Showcase</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <a class="project-item" href="">
+                        <div class="position-relative">
+                            <img class="img-fluid-1" src="images/showcase/village-showcase-lg007.jpg" alt="">
+                            <div class="project-text p-4">
+                                <h3 class="mb-0">Project Showcase</h3>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="project-item" href="">
+                        <div class="position-relative">
+                            <img class="img-fluid-1" src="images/showcase/village-showcase-md-7.jpg" alt="">
+                            <div class="project-text p-4">
+                                <h3 class="mb-0">Project Showcase</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <a class="project-item" href="">
+                        <div class="position-relative">
+                            <img class="img-fluid-1" src="images/showcase/village-showcase-md-8.jpg" alt="">
+                            <div class="project-text p-4">
+                                <h3 class="mb-0">Project Showcase</h3>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="project-item" href="">
+                        <div class="position-relative">
+                            <img class="img-fluid-1" src="images/showcase/village-showcase-lg-3.jpg" alt="">
+                            <div class="project-text p-4">
+                                <h3 class="mb-0">Project Showcase</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <a class="project-item" href="">
+                        <div class="position-relative">
+                            <img class="img-fluid-1" src="images/showcase/village-showcase-md-005.jpg" alt="">
+                            <div class="project-text p-4">
+                                <h3 class="mb-0">Project Showcase</h3>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="project-item" href="">
+                        <div class="position-relative">
+                            <img class="img-fluid-1" src="images/showcase/village-showcase-lg-4.jpg" alt="">
+                            <div class="project-text p-4">
+                                <h3 class="mb-0">Project Showcase</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.9s">
+                    <a class="project-item" href="">
+                        <div class="position-relative">
+                            <img class="img-fluid-1" src="images/showcase/village-showcase-lg-5.jpg" alt="">
+                            <div class="project-text p-4">
+                                <h3 class="mb-0">Project Showcase</h3>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="project-item" href="">
+                        <div class="position-relative">
+                            <img class="img-fluid-1" src="images/showcase/village-showcase-md-5.jpg" alt="">
+                            <div class="project-text p-4">
+                                <h3 class="mb-0">Project Showcase</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.11s">
+                    <a class="project-item" href="">
+                        <div class="position-relative">
+                            <img class="img-fluid-1" src="images/showcase/village-showcase-md-001.jpg" alt="">
+                            <div class="project-text p-4">
+                                <h3 class="mb-0">Project Showcase</h3>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="project-item" href="">
+                        <div class="position-relative">
+                            <img class="img-fluid-1" src="images/showcase/village-showcase-lg-6.jpg" alt="">
+                            <div class="project-text p-4">
+                                <h3 class="mb-0">Project Showcase</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- Project End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-body footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-50">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <a href="https://www.la-fa.org" target="_blank"><img class="img-2" src="images/logo/logo-1 - Copy.png" alt="footer-logo"></a>
+                </div>
+                <div class="col-lg-30 col-md-6">
+                    <h4 class="section-title text-light mb-40">Our Value</h4>
+                    <hr class="hr-footer">
+                    <p>Every child, everywhere has the right to a happy and healthy life and your donation goes a long way to helping create a better life for them.
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <a class="btn btn-link" href="ways-to-give">Feed a Child</a>
+                    <a class="btn btn-link" href="contact-us">Get in Touch</a>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-square btn-outline-body me-1" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-outline-body me-1" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-outline-body me-1" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-outline-body me-1" href=""><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center">
+                        Copyright &copy; 2024&nbsp;&nbsp;<span style='font-size:20px;'>&#8739;</span>&nbsp;&nbsp;<a href="https://www.la-fa.org">Love-Line Aid for All</a>. All Right Reserved.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="lib/twentytwenty/jquery.event.move.js"></script>
+    <script src="lib/twentytwenty/jquery.twentytwenty.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
